@@ -6,7 +6,6 @@ from gtts import gTTS
 from io import BytesIO
 import os
 from dotenv import load_dotenv
-import speech_recognition as sr
 from docx import Document
 
 # ================== LOAD ENV ==================
@@ -60,7 +59,7 @@ prompt = ChatPromptTemplate.from_messages(
 # ================== TRANSLATION FUNCTION ==================
 def real_translate(text):
     groq = ChatGroq(
-        model_name="llama-3.3-70b-versatile",   # ✅ Working model
+        model_name="llama-3.3-70b-versatile",
         groq_api_key=api_key,
         temperature=0
     )
@@ -77,8 +76,7 @@ def real_translate(text):
 st.sidebar.title("📌 Navigation")
 menu = st.sidebar.radio("Choose Option", [
     "Text Translation",
-    "File Translation",
-    "Voice Translation"
+    "File Translation"
 ])
 
 # =====================================================
@@ -143,40 +141,3 @@ elif menu == "File Translation":
 
             except Exception as e:
                 st.error(f"Translation failed: {str(e)}")
-
-# =====================================================
-# 3️⃣ VOICE TRANSLATION
-# =====================================================
-elif menu == "Voice Translation":
-
-    st.header("🎤 Voice Translation")
-
-    recognizer = sr.Recognizer()
-
-    if st.button("Start Recording"):
-
-        try:
-            with sr.Microphone() as source:
-                recognizer.adjust_for_ambient_noise(source, duration=1)
-                st.info("Speak now...")
-                audio = recognizer.listen(source, timeout=5, phrase_time_limit=7)
-
-            text = recognizer.recognize_google(audio)
-            st.write("You said:", text)
-
-            if source_language != target_language:
-
-                if demo_mode:
-                    translation = f"[DEMO] Voice translated to {target_language}"
-                else:
-                    translation = real_translate(text)
-
-                st.success("Translation:")
-                st.markdown(f"**{translation}**")
-
-        except sr.WaitTimeoutError:
-            st.error("No speech detected. Try again.")
-        except sr.UnknownValueError:
-            st.error("Could not understand audio.")
-        except Exception as e:
-            st.error(f"Voice translation failed: {str(e)}")
