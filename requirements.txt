@@ -3,6 +3,6 @@ langchain_openai
 langchain_core
 langchain_groq
 gtts
-docx
+python-docx
 python-dotenv
 
