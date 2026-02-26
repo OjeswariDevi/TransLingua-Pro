@@ -140,4 +140,3 @@ elif menu == "File Translation":
                 st.markdown(f"**{translation}**")
 
             except Exception as e:
-                st.error(f"Translation failed: {str(e)}")
