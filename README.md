@@ -4,8 +4,6 @@
 https://translingua-pro-khr2hr5kstsdvdkrcda2gu.streamlit.app
 
 ---
----
-
 ## 👥 Team Details
 
 **Team ID:** LTVIP2026TMIDS65757  
