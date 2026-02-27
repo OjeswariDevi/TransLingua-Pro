@@ -52,7 +52,11 @@ This project was developed as part of the SmartBridge Virtual Internship Program
 
 ---
 
+---
+
 ## 📂 Project Structure
+
+```
 TransLingua-Pro/
 │
 ├── app.py
@@ -62,17 +66,20 @@ TransLingua-Pro/
 ├── .gitignore
 │
 ├── Documentation/
-│ ├── 1. Ideation Phase
-│ ├── 2. Requirement Analysis
-│ ├── 3. Project Design Phase
-│ ├── 4. Project Planning Phase
-│ ├── 5. Project Development Phase
-│ └── 6. Project Documentation
+│   ├── 1. Ideation Phase/
+│   ├── 2. Requirement Analysis/
+│   ├── 3. Project Design Phase/
+│   ├── 4. Project Planning Phase/
+│   ├── 5. Project Development Phase/
+│   └── 6. Project Documentation/
 │
-├── Demo_Video.mp4
-└── Images / Screenshots
-
----
+├── Images/
+│   ├── home.png
+│   ├── translation.png
+│   └── file_translation.png
+│
+└── Demo_Video.mp4
+```
 
 ## 🔐 Security Implementation
 
