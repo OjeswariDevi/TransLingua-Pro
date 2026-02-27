@@ -1,59 +1,131 @@
-# TransLingua_Pro
+# 🌍 TransLingua Pro – AI-Powered Multi-Language Translator
 
-A Streamlit application designed for real-time language translation. The app supports multiple input methods including text input, file uploads, and voice input. Users can translate text between various languages and listen to the translated text through audio feedback. The interface is interactive and features a customizable background.
+🚀 **Live Demo:**  
+https://translingua-pro-khr2hr5kstsdvdkrcda2gu.streamlit.app
 
-## Features
+---
 
-- **Real-Time Language Translation**: Enter text and get instant translations between selected languages.
-- **File Upload and Translation**: Upload text or Word files for translation.
-- **Voice Input Translation**: Record your voice, transcribe it, and translate it to the selected language.
-- **Audio Feedback**: Option to listen to the translated text in audio format.
-- **Customizable Background**: Set a background image for the app interface.
+## 📌 Project Overview
 
-![Alt text](trans.png)
+TransLingua Pro is an AI-powered multi-language translation web application built using Streamlit and integrated with a Large Language Model (LLM) via LangChain and Groq API.
 
-## Installation
+The application helps users overcome language barriers by providing accurate and fast translations between multiple languages through a simple and user-friendly web interface.
 
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    ```
+This project was developed as part of the SmartBridge Virtual Internship Program and demonstrates real-world implementation of Generative AI technologies.
 
-2. Navigate to the project directory:
-    ```bash
-    cd your-repo-name
-    ```
+---
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+## ✨ Features
 
-## Usage
+- 🌐 Multi-language text translation
+- 📄 File translation (.txt and .docx support)
+- 🔊 Text-to-speech audio playback
+- ⚡ Fast LLM-powered responses
+- 🔐 Secure API key handling using environment variables
+- ☁️ Deployed on Streamlit Cloud
+- 📘 Structured academic documentation included
 
-1. Set up your environment variables by creating a `.env` file in the project root with the following content:
-    ```
-    GROQ_API_KEY=your_groq_api_key
-    ```
+---
 
-2. Run the Streamlit app:
-    ```bash
-    streamlit run app.py
-    ```
+## 🛠 Tech Stack
 
-3. Open the app in your web browser at `http://localhost:8501`.
+### Programming Language
+- Python 3.10+
 
-## Dependencies
+### Framework
+- Streamlit
 
-- `streamlit`
-- `langchain_openai`
-- `langchain_core`
-- `langchain_groq`
-- `gtts`
-- `speech_recognition`
-- `docx`
-- `python-dotenv`
+### LLM Integration
+- LangChain
+- Groq API (LLaMA 3 Model)
 
-## Contributing
+### Libraries
+- gTTS (Text-to-Speech)
+- python-docx (Document Processing)
+- python-dotenv (Environment Management)
 
-Feel free to open issues or submit pull requests if you have suggestions or improvements.
+### Version Control
+- Git & GitHub
+
+### Deployment
+- Streamlit Cloud
+
+---
+
+## 📂 Project Structure
+TransLingua-Pro/
+│
+├── app.py
+├── requirements.txt
+├── runtime.txt
+├── README.md
+├── .gitignore
+│
+├── Documentation/
+│ ├── 1. Ideation Phase
+│ ├── 2. Requirement Analysis
+│ ├── 3. Project Design Phase
+│ ├── 4. Project Planning Phase
+│ ├── 5. Project Development Phase
+│ └── 6. Project Documentation
+│
+├── Demo_Video.mp4
+└── Images / Screenshots
+
+---
+
+## 🔐 Security Implementation
+
+Security was given high priority during development:
+
+- API keys are stored using environment variables
+- `.env` file is excluded via `.gitignore`
+- No sensitive credentials are hardcoded
+- Streamlit Cloud Secrets Manager is used for production deployment
+
+This ensures secure handling of API credentials.
+
+---
+
+## ⚙️ How to Run Locally
+
+1. Clone the repository:
+```
+git clone https://github.com/OjeswariDevi/TransLingua-Pro.git
+```
+
+2. Navigate into the project folder:
+
+```
+cd TransLingua-Pro
+```
+
+3. Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+4. Create a `.env` file and add your API key:
+
+```
+GROQ_API_KEY=your_api_key_here
+```
+
+5. Run the application:
+
+```
+streamlit run app.py
+```
+---
+
+## 📸 Application Screenshots
+
+### 🔹 Home Page
+![Home Page](Images/home.png)
+
+### 🔹 Text Translation Output
+![Translation Output](Images/translation.png)
+
+### 🔹 File Translation
+![File Translation](Images/file_translation.png)
