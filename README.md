@@ -138,9 +138,6 @@ streamlit run app.py
 ![File Translation](Images/file_translation.png)
 ---
 
-## 🎥 Project Demo Video
-
----
 
 ## 🎥 Project Demo Video
 
