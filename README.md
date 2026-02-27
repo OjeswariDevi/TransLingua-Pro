@@ -140,8 +140,12 @@ streamlit run app.py
 
 ## 🎥 Project Demo Video
 
-Click the image below to watch the full demo:
+---
 
-[![Watch Demo](Images/home.png)](https://drive.google.com/file/d/1eNT3EjlwV32iZC6URv3GI1PXMYTgUQ_8/view)
+## 🎥 Project Demo Video
+
+Watch the complete working demo of **TransLingua Pro** here:
+
+🔗 [Click here to watch the demo video](https://drive.google.com/file/d/1eNT3EjlwV32iZC6URv3GI1PXMYTgUQ_8/view)
 
 ---
