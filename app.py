@@ -73,7 +73,8 @@ def real_translate(text):
     })
 
 # ================== SIDEBAR MENU ==================
-st.sidebar.title("📌 Navigation")
+st.sidebar.image("logo1.png", use_container_width=True)
+st.sidebar.markdown("---")
 menu = st.sidebar.radio("Choose Option", [
     "Text Translation",
     "File Translation"
