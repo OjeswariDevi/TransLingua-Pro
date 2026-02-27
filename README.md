@@ -52,8 +52,6 @@ This project was developed as part of the SmartBridge Virtual Internship Program
 
 ---
 
----
-
 ## 📂 Project Structure
 
 ```
