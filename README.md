@@ -4,6 +4,21 @@
 https://translingua-pro-khr2hr5kstsdvdkrcda2gu.streamlit.app
 
 ---
+---
+
+## 👥 Team Details
+
+**Team ID:** LTVIP2026TMIDS65757  
+
+### 🧑‍💻 Team Leader
+- Kilari Ojeswari Devi  
+
+### 👩‍💻 Team Members
+- Maguluri Varsha  
+- Medara Akshitha  
+- Male Ravali  
+
+---
 
 ## 📌 Project Overview
 
